@@ -1,0 +1,8 @@
+kind create cluster (v0.30.0, experimental podman provider) failed in this sandbox, twice:
+
+attempt 1: Error: statfs /lib/modules: no such file or directory
+attempt 2 (after mkdir /lib/modules): netavark: setns: IO error: Operation not permitted;
+  fuse-overlayfs: cannot mount (fuse device not available)
+
+Conclusion: no disposable cluster can run in this sandbox, so no live-cluster
+verification was possible. Cluster interaction in this guide is documented-only.

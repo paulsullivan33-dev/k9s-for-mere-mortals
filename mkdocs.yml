@@ -1,0 +1,28 @@
+site_name: K9s for Mere Mortals
+site_description: A keyboard-driven window onto a Kubernetes cluster. Watching pods, deployments and services as they change, reading logs, describing resources and acting on them from the terminal, with the power that implies and its limits stated plainly.
+site_url: https://paulsullivan33-dev.github.io/k9s-for-mere-mortals/
+copyright: 'Part of <a href="https://paulsullivan33-dev.github.io/mere-mortals/">For Mere Mortals</a> · Text <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, code MIT'
+
+# Guides live at the repo root (nice for GitHub browsing).
+# The deploy workflow copies them into docs/ before building.
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - What K9s Is: what-k9s-is.md
+  - The Moving Parts: the-moving-parts.md
+  - Installing K9s: installing-k9s.md
+  - First Run: first-run.md
+  - Navigating Views: navigating-views.md
+  - Filtering and Searching: filtering-and-searching.md
+  - Looking Inside: looking-inside.md
+  - Logs: logs.md
+  - Acting on Resources: acting-on-resources.md
+  - Port Forwards and Extras: port-forwards-and-extras.md
+  - Making It Yours: making-it-yours.md
+  - The Neighbours: the-neighbours.md
+  - Limits: limits.md
+  - Troubleshooting: troubleshooting.md
+  - Glossary: glossary.md
+  - Writing Criteria: criteria.md

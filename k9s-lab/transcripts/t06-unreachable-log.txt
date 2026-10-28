@@ -1,0 +1,9 @@
+[2m2026-10-28T02:47:13Z[0m [91mERR[0m Unable to fetch server version [2merror=[0m"Get \"https://127.0.0.1:6443/version?timeout=2m0s\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+[2m2026-10-28T02:47:13Z[0m [93mWRN[0m 💣 Kubernetes connectivity toast!
+[2m2026-10-28T02:47:13Z[0m [92mINF[0m [CONFIG] Saving K9s config to disk [2mpath=[0m/home/hatch/workspace/build-check/k9s-scratch/xdg/k9s/config.yaml
+[2m2026-10-28T02:47:13Z[0m [93mWRN[0m Fail to load global/context configuration [2merror=[0m"Get \"https://127.0.0.1:6443/api\": tls: failed to verify certificate: x509: certificate signed by unknown authority\nopen /home/hatch/workspace/build-check/k9s-scratch/xdg/k9s/config.yaml: no such file or directory\ncannot connect to context: nowhere\nk8s connection failed for context: nowhere"
+[2m2026-10-28T02:47:13Z[0m [91mERR[0m Load cluster resources - No API server connection
+[2m2026-10-28T02:47:32Z[0m [91mERR[0m Unable to fetch server version [2merror=[0m"Get \"https://127.0.0.1:6443/version?timeout=2m0s\": dial tcp 127.0.0.1:6443: connect: connection refused"
+[2m2026-10-28T02:47:32Z[0m [91mERR[0m Context switch failed during use command [2merror=[0m"no connection to cached dial"
+[2m2026-10-28T02:47:32Z[0m [91mERR[0m Flash error [2merror=[0m"no connection to cached dial"
+[2m2026-10-28T02:47:56Z[0m [91mERR[0m Failed to obtain list of namespaces [2merror=[0m"user not authorized to list all namespaces"

@@ -1,0 +1,69 @@
+The lab — one real binary, one invented cluster, no live cluster
+====================================================================
+
+The lab is K9s as its project ships it,
+downloaded as the official release
+tarball on the build machine (an Ubuntu
+24.04 sandbox, 2 CPUs, 7.7 GB RAM):
+
+  * K9s v0.51.0 (commit
+    558caafe7ba067467de46b320cc22ef11fef9c34),
+    the Linux amd64 release binary,
+    unpacked into a scratch folder and
+    run from there. Nothing was
+    installed system-wide.
+  * kubectl: not used. The cluster it
+    would have talked to did not
+    exist, and it would not have been
+    fooled either.
+
+The fixture: a kubeconfig written for
+the occasion, holding one context
+named "nowhere": an API server address
+of https://127.0.0.1:6443 (where the
+lab ran nothing on purpose), a user
+"nobody", and a token that is not a
+real token. Deliberately generic; not
+modelled on any real cluster, person
+or organisation.
+
+Run for real, in a terminal session
+(tmux), with K9s' config, data and
+state folders pointed at scratch
+space:
+
+  * First start lands on the contexts
+    view, header showing n/a and [RW];
+    Enter on the context fails its
+    connectivity check and K9s stays
+    put, flashing the error.
+  * :aliases opens and lists the 23
+    built-in command aliases.
+  * ? opens the real help screen.
+  * The first run creates config.yaml
+    and aliases.yaml, and a
+    per-context folder; the log
+    records the whole attempt,
+    including an x509 error (something
+    in the sandbox answered TLS on
+    that port with a wrong certificate
+    before refusing) and then plain
+    "connection refused".
+
+The cluster that never was: a
+disposable kind cluster (kind v0.30.0,
+experimental podman provider) was
+attempted twice and could not run in
+this sandbox — no /lib/modules for
+the node image, then container
+networking not permitted (netavark
+setns) and no fuse device for the
+overlay mount. The docker daemon was
+not reachable at all. Transcript t08
+keeps the errors. Consequence, stated
+in criteria.md as well: every part of
+the guide that needs a living cluster
+is documented-only, taught from the
+program's own documentation and the
+references it prints — never
+presented as run.

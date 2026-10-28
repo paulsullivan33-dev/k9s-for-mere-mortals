@@ -1,0 +1,40 @@
+Context: n/a [RW]                                  <esc> Back                                  ____  __ ________
+Cluster: n/a                                                                                  |    |/  /   __   \______
+User:    n/a                                                                                  |       /\____    /  ___/
+K9s Rev: v0.51.0                                                                              |    \   \  /    /\___  \
+K8s Rev: n/a                                                                                  |____|\__ \/____//____  /
+CPU:     n/a                                                                                           \/           \/
+MEM:     n/a
+┌──────────────────────────────────────────────────────── Help ────────────────────────────────────────────────────────┐
+│ RESOURCE                         GENERAL                                NAVIGATION                     HOTKEYS       │
+│ <c>        Copy                  <ctrl-a>       Aliases                 <j>         Down                             │
+│ <enter>    Goto                  <q>            Back                    <shift-g>   Goto Bottom                      │
+│ <?>        Help                  <esc>          Back/Clear              <g>         Goto Top                         │
+│ <ctrl-r>   Refresh               <ctrl-u>       Command Clear           <[>         History Back                     │
+│ <shift-a>  Sort ApiGroup         <:cmd>         Command mode            <]>         History Forward                  │
+│ <shift-c>  Sort Command          <tab>          Field Next              <->         Last Used Command                │
+│ <shift-r>  Sort Resource         <backtab>      Field Previous          <h>         Left                             │
+│ <shift-o>  Sort Selected Column  </term>        Filter mode             <ctrl-f>    Page Down                        │
+│ <ctrl-z>   Toggle Faults         <?>            Help                    <ctrl-b>    Page Up                          │
+│                                  <space>        Mark                    <l>         Right                            │
+│                                  <ctrl-\>       Mark Clear              <k>         Up                               │
+│                                  <ctrl-space>   Mark Range                                                           │
+│                                  <:q>           Quit                                                                 │
+│                                  <ctrl-r>       Reload                                                               │
+│                                  <ctrl-s>       Save                                                                 │
+│                                  <shift-right>  Select Next Column                                                   │
+│                                  <shift-left>   Select Previous Column                                               │
+│                                  <ctrl-g>       Toggle Crumbs                                                        │
+│                                  <ctrl-e>       Toggle Header                                                        │
+│                                                                                                                      │
+│                                                                                                                      │
+│                                                                                                                      │
+│                                                                                                                      │
+│                                                                                                                      │
+│                                                                                                                      │
+│                                                                                                                      │
+│                                                                                                                      │
+│                                                                                                                      │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  <contexts>   <aliases>   <help>
+

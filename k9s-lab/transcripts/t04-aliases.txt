@@ -1,0 +1,40 @@
+Context: n/a [RW]                                  <enter> Goto                                ____  __ ________
+Cluster: n/a                                       <?>     Help                               |    |/  /   __   \______
+User:    n/a                                                                                  |       /\____    /  ___/
+K9s Rev: v0.51.0                                                                              |    \   \  /    /\___  \
+K8s Rev: n/a                                                                                  |____|\__ \/____//____  /
+CPU:     n/a                                                                                           \/           \/
+MEM:     n/a
+┌────────────────────────────────────────────────── aliases(all)[23] ──────────────────────────────────────────────────┐
+│ RESOURCE↑                         GROUP              VERSION              COMMAND                                    │
+│ aliases                                                                   a alias aliases                            │
+│ benchmarks                                                                bench benchmark benchmarks                 │
+│ clusterrolebindings                                                       crb                                        │
+│ clusterroles                                                              cr                                         │
+│ contexts                                                                  context contexts ctx                       │
+│ deployments                                                               dp                                         │
+│ dirs                                                                      d dir dirs                                 │
+│ groups                                                                    group groups grp                           │
+│ helm                                                                      chart charts helm hm                       │
+│ helm-history                                                              helm-history                               │
+│ help                                                                      ? h help                                   │
+│ jobs                                                                      jo                                         │
+│ networkpolicies                                                           np                                         │
+│ portforwards                                                              pf portforward portforwards                │
+│ pulses                                                                    hz pu pulse pulses                         │
+│ quit                                                                      Q q q! qa quit                             │
+│ rolebindings                                                              rb                                         │
+│ roles                                                                     ro                                         │
+│ screendumps                                                               screendump screendumps sd                  │
+│ secrets                                              v1                   sec                                        │
+│ users                                                                     user users usr                             │
+│ workloads                                                                 wk workload workloads                      │
+│ xrays                                                                     x xray xrays                               │
+│                                                                                                                      │
+│                                                                                                                      │
+│                                                                                                                      │
+│                                                                                                                      │
+│                                                                                                                      │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  <contexts>   <aliases>
+

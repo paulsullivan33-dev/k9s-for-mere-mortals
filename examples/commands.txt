@@ -1,0 +1,78 @@
+K9s — the distilled commands and keys
+====================================================================
+Placeholders: <file> is a kubeconfig of
+yours; <ctx> a context name in it.
+Keys are pressed inside K9s unless a
+shell command is shown.
+
+FIRST CONTACT (chapters 3-4)
+--------------------------------------------------------------------
+  k9s version                      # prove the install
+  k9s info                         # where every file lives
+  k9s --help                       # every flag, one screen
+
+  k9s                              # default kubeconfig + context
+  k9s --kubeconfig <file>          # a specific kubeconfig
+  k9s --context <ctx>              # a specific context
+  k9s -n staging                   # start in a namespace
+  k9s -A                           # start in all namespaces
+  k9s -c deploy                    # start on a view, not pods
+  k9s --readonly                   # start with the leash on
+  k9s -r 5                         # refresh every 5 seconds
+
+NAVIGATING (chapter 5)
+--------------------------------------------------------------------
+  :pods  :deploy  :svc  :nodes     # colon names a view
+  :pod ns-x                        # ...in a namespace
+  :pod /fred                       # ...pre-filtered
+  :pod app=fred,env=dev            # ...by labels
+  :pod @ctx1                       # ...on another context
+  :ctx  :ns  :aliases  :pulse      # the special views
+  ctrl-a                           # the aliases view, direct
+  ?                                # the help screen
+  esc                              # back one view
+  -                                # last command (like cd -)
+  [  ]                             # command history back/forward
+  shift-n / shift-a / shift-s      # sort by name / age / status
+  space / ctrl-space / ctrl-\      # mark / mark range / unmark
+  ctrl-s                           # save the table to a file
+
+FILTERING (chapter 6)
+--------------------------------------------------------------------
+  /web                             # rows matching (regex)
+  /fred|blee                       # regex "or"
+  /! kube-system                   # everything NOT matching
+  /-l app=web                      # by label (asks the server)
+  /-f apipd                        # fuzzy: letters in order
+
+LOOKING INSIDE (chapters 7-8)
+--------------------------------------------------------------------
+  d                                # describe (the story + events)
+  y                                # YAML (the exact object)
+  e                                # edit in $EDITOR (sends on save)
+  l                                # logs of the selected pod
+  p                                # PREVIOUS logs (the crashed run)
+  w / t / f  (in logs)             # wrap / timestamps / fullscreen
+  shift-j                          # jump to the owner
+
+ACTING (chapter 9) — read the chapter first
+--------------------------------------------------------------------
+  ctrl-d                           # delete (asks for confirmation)
+  ctrl-k                           # kill (does NOT ask; --now)
+  r                                # restart a workload / drain a node
+  t                                # trigger a cron job now
+  u                                # cordon/uncordon a node
+  s / a                            # shell into / attach to container
+
+EXTRAS (chapter 10)
+--------------------------------------------------------------------
+  shift-f                          # set up a port forward
+  f                                # show a resource's forwards
+  :portforwards                    # all forwards, one view
+  b                                # benchmark a service (yours!)
+  :xray po                         # a resource as a tree
+  :popeye                          # the misconfiguration scan
+
+LEAVING
+--------------------------------------------------------------------
+  :q  or ctrl-c                    # quit (unless noExitOnCtrlC)

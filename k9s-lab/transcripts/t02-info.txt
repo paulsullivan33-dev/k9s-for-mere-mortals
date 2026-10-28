@@ -1,0 +1,20 @@
+ ____  __ ________       
+|    |/  /   __   \______
+|       /\____    /  ___/
+|    \   \  /    /\___  \
+|____|\__ \/____//____  /
+         \/           \/ 
+
+Version:           v0.51.0
+Config:            /home/hatch/workspace/build-check/k9s-scratch/none/x/k9s/config.yaml
+Custom Views:      /home/hatch/workspace/build-check/k9s-scratch/none/x/k9s/views.yaml
+Custom Jumps:      /home/hatch/workspace/build-check/k9s-scratch/none/x/k9s/jumps.yaml
+Plugins:           /home/hatch/workspace/build-check/k9s-scratch/none/x/k9s/plugins.yaml
+Hotkeys:           /home/hatch/workspace/build-check/k9s-scratch/none/x/k9s/hotkeys.yaml
+Aliases:           /home/hatch/workspace/build-check/k9s-scratch/none/x/k9s/aliases.yaml
+Skins:             /home/hatch/workspace/build-check/k9s-scratch/none/x/k9s/skins
+Context Configs:   /home/hatch/workspace/build-check/k9s-scratch/none/d/k9s/clusters
+Logs:              /home/hatch/.local/state/k9s/k9s.log
+Benchmarks:        /home/hatch/.local/state/k9s/benchmarks
+2026/10/28 02:48:48 ERROR Unable to reads k9s config file error="open /home/hatch/workspace/build-check/k9s-scratch/none/x/k9s/config.yaml: no such file or directory"
+ScreenDumps:       /home/hatch/.local/state/k9s/screen-dumps
